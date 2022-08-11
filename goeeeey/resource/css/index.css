@@ -1,0 +1,165 @@
+.bar::before, .bar::after{
+ content: "";
+ display: table;
+ clear: both;F
+}
+*, *::before, *::after{
+  content:"";
+  box-sizing: inherit;
+}
+html, body {
+    font-family: Verdana,sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+html {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+.div{
+  display: block;
+}
+
+.h3{
+  margin-top:10px;
+  margin-bottom:10px;
+  color: #00000!important;
+  font-weight: normal;
+
+}
+.top{
+  top:0;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+.bar{
+  width:100%;
+  overflow: hidden;
+  /*position:relative;*/
+}
+
+/*button style */
+.for_white{
+  color: #f44336!important;
+  background-color: #fff!important ;
+}
+
+
+/* letter spacing*/
+.wide{
+  letter-spacing: 4px;
+}
+
+.padding{
+  padding: 8px 16px!important;
+}
+
+.padding-32{
+  padding-top: 32px !important;
+  padding-bottom: 32px !important;
+}
+
+.padding-16{
+  padding-top: 16px;
+  padding-bottom:16px;
+}
+.card{
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16);
+}
+
+.bar .bar-item{
+  padding: 8px 16px;
+  float: left;
+  width: auto;
+  border: none;
+  display: block;
+  outline: 0;
+}
+
+.button:hover{
+  color:#000!important;
+  background-color:#ccc!important;
+}
+
+.bar .button{
+white-space: normal;
+}
+
+@media(max-width: 600px){
+.hide-small{
+  display: none!important;  /*hide the hyperlink*/
+  }
+}
+
+/*
+.right{
+  float:right;
+}
+*/
+.right{
+  float:right;
+  padding-right :38px;
+
+}
+
+.header-color{
+  color: #00000!important;
+}
+.button{
+  /*padding: 8px 16px;*/
+  vertical-align: middle;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  background-color: inherit;
+  text-align: center;
+  cursor:pointer;
+  user-select: none;
+  white space: normal;
+}
+
+.container{
+  position: relative;
+}
+.content{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.image{
+  max-width: 100%;
+  height:auto;
+}
+
+.content-image{
+  max-width: 100%;
+  height:auto;
+}
+/* content section */
+
+
+.border-bottom{
+  border-bottom: 0.5px solid #ccc!important;
+}
+
+.row-padding{
+  padding: 0 8px;
+}
+
+.col{
+  float:left;
+  width:100%;
+}
+
+
+.margin-bottom{
+  margin-bottom: 16px;
+}
+
+
+.display-container{
+  position:relative;
+}
