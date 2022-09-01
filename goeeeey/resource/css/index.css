@@ -1,7 +1,7 @@
 .bar::before, .bar::after{
  content: "";
  display: table;
- clear: both;F
+ clear: both;
 }
 *, *::before, *::after{
   content:"";
@@ -35,6 +35,11 @@ html {
   z-index: 1;
 }
 
+/*
+.top a:hover{
+  color:black;
+}
+*/
 .bar{
   width:100%;
   overflow: hidden;
@@ -81,19 +86,12 @@ html {
 
 .button:hover{
   color:#000!important;
-  background-color:#ccc!important;
 }
 
 .bar .button{
-white-space: normal;
+  white-space: normal;
+  font-size: 15px;
 }
-
-@media(max-width: 600px){
-.hide-small{
-  display: none!important;  /*hide the hyperlink*/
-  }
-}
-
 /*
 .right{
   float:right;
@@ -127,16 +125,31 @@ white-space: normal;
 .content{
   margin-left: auto;
   margin-right: auto;
+
 }
 
-.image{
-  max-width: 100%;
-  height:auto;
+
+.imgbox{
+  display: grid;
+  /*height:100%;*/
 }
 
+.center-fit{
+  max-width:100%;
+  max-height: 100vh;
+  margin:auto;
+}
 .content-image{
-  max-width: 100%;
-  height:auto;
+  width:300px;
+  height:300px;
+  object-fit: scale-down;
+}
+
+
+.content-video{
+  width:300px;
+  height:300px;
+  object-fit:scale-down;
 }
 /* content section */
 
@@ -146,7 +159,7 @@ white-space: normal;
 }
 
 .row-padding{
-  padding: 0 8px;
+  padding: 0;
 }
 
 .col{
@@ -162,4 +175,35 @@ white-space: normal;
 
 .display-container{
   position:relative;
+}
+
+.footer{
+  background-color: rgb(0,0,0);
+  color:#fff;
+  padding:32px;
+  text-align:center;
+  font-family:sans-serif;
+  font-size:12px;
+  font-weight:100;
+}
+
+.three-grid{
+  float:left;
+  width: 33.33%;
+  /*padding-right: 6px;*/
+}
+
+/*layout for screen width < 600px  */
+@media screen and (max-width: 1024px){
+.bar .button{
+  font-size: 12px;
+}
+}
+@media screen and (max-width: 600px){
+  .hide-small{
+    display: none!important;  /*hide the hyperlink*/
+  }
+  .three-grid{
+    width: 100%;
+  }
 }
